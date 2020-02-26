@@ -23,3 +23,7 @@ To run the project
 
     pipenv run python app.py 
 
+# License
+
+This project is published under the WTFPL licence.
+
