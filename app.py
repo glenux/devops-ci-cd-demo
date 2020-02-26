@@ -1,15 +1,19 @@
+"""Small Flask server demo"""
+
 from flask import Flask
 
-app = Flask(__name__)
+APP = Flask(__name__)
 
-@app.route('/')
+@APP.route('/')
 def root_get():
+    """Handles the root url with a welcoming message"""
     return "Hello world !"
 
 
-@app.route('/hello/<name>')
+@APP.route('/hello/<name>')
 def hello_get(name):
+    """Handles the /hello url with a personalized welcoming message"""
     return "Hello {} !".format(name)
 
 if __name__ == "__main__":
-    app.run()
+    APP.run()
